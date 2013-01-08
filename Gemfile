@@ -1,8 +1,9 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.2.8'
-gem 'mongoid', '~> 2.4.10'
-gem 'mongoid_rails_migrations'
+gem 'pg'
+#gem 'mongoid', '~> 2.4.10'
+#gem 'mongoid_rails_migrations'
 gem 'devise', '~> 1.5.3'
 gem 'haml'
 gem 'htmlentities', "~> 4.3.0"
@@ -62,7 +63,7 @@ gem 'omniauth-github'
 
 
 platform :ruby do
-  gem 'mongo', '= 1.6.2'
+#  gem 'mongo', '= 1.6.2'
   gem 'bson', '= 1.6.2'
   gem 'bson_ext', '= 1.6.2'
 end
