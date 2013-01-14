@@ -1,8 +1,8 @@
 Fabricator :notification_service  do
   app!
-  room_id { sequence :word }
-  api_token { sequence :word }
-  subdomain { sequence :word }
+  room_id { Fabricate.sequence :word }
+  api_token { Fabricate.sequence :word }
+  subdomain { Fabricate.sequence :word }
 end
 
 %w(campfire gtalk hipchat hoiio pushover).each do |t|
