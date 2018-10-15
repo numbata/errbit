@@ -18,7 +18,7 @@ gem 'rack-ssl', :require => 'rack/ssl'   # force SSL
 gem 'useragent'
 gem 'decent_exposure'
 gem 'strong_parameters'
-gem 'actionmailer_inline_css'
+gem 'actionmailer_inline_css', '>= 1.5.3'
 gem 'kaminari', '>= 0.14.1'
 gem 'rack-ssl-enforcer', :require => false
 gem 'fabrication'
@@ -38,7 +38,7 @@ gem 'lighthouse-api'
 # Redmine
 gem 'oruen_redmine_client', :require => 'redmine_client'
 # Pivotal Tracker
-gem 'pivotal-tracker'
+gem 'pivotal-tracker', '>= 0.5.12'
 # Fogbugz
 gem 'ruby-fogbugz', :require => 'fogbugz'
 # Github Issues
@@ -47,7 +47,7 @@ gem 'octokit', '~> 1.18'
 gem 'gitlab', :git => 'https://github.com/NARKOZ/gitlab.git'
 
 # Bitbucket Issues
-gem 'bitbucket_rest_api', :require => false
+gem 'bitbucket_rest_api', '>= 0.1.5', :require => false
 
 # Unfuddle
 gem "taskmapper"
@@ -107,7 +107,7 @@ group :development do
 end
 
 group :test do
-  gem 'capybara'
+  gem 'capybara', '>= 2.1.0'
   gem 'launchy'
   gem 'database_cleaner'
   gem 'email_spec'
