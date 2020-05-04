@@ -5,12 +5,12 @@ RAILS_VERSION = '~> 3.2.14'
 
 gem 'actionmailer', RAILS_VERSION
 gem 'actionpack', RAILS_VERSION
-gem 'railties', RAILS_VERSION
+gem 'railties', '>= 4.0.0', RAILS_VERSION
 
 gem 'mongoid'
 
-gem 'mongoid_rails_migrations'
-gem 'devise'
+gem 'mongoid_rails_migrations', '>= 1.0.1'
+gem 'devise', '>= 3.1.1'
 gem 'haml'
 gem 'htmlentities'
 gem 'rack-ssl', :require => 'rack/ssl'   # force SSL
@@ -22,7 +22,7 @@ gem 'actionmailer_inline_css'
 gem 'kaminari', '>= 0.14.1'
 gem 'rack-ssl-enforcer', :require => false
 gem 'fabrication'
-gem 'rails_autolink'
+gem 'rails_autolink', '>= 1.1.4'
 # Please don't update hoptoad_notifier to airbrake.
 # It's for internal use only, and we monkeypatch certain methods
 gem 'hoptoad_notifier', "~> 2.4"
@@ -54,7 +54,7 @@ gem "taskmapper"
 gem "taskmapper-unfuddle"
 
 # Jira
-gem 'jira-ruby', :require => 'jira'
+gem 'jira-ruby', '>= 0.1.2'
 
 # Notification services
 # ---------------------------------------
@@ -64,9 +64,9 @@ gem 'hipchat'
 # Google Talk
 gem 'xmpp4r', :require => ["xmpp4r", "xmpp4r/muc"]
 # Hoiio (SMS)
-gem 'hoi'
+gem 'hoi', '>= 0.0.6'
 # Pushover (iOS Push notifications)
-gem 'rushover'
+gem 'rushover', '>= 0.3.0'
 # Hubot
 gem 'httparty'
 # Flowdock
@@ -81,15 +81,15 @@ gem 'ri_cal'
 gem 'yajl-ruby', :require => "yajl"
 
 group :development, :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 2.14.0'
   gem 'webmock', :require => false
-  gem 'airbrake', :require => false
+  gem 'airbrake', '>= 3.1.14', :require => false
   gem 'ruby-debug', :platform => :mri_18
   gem 'debugger', :platform => :mri_19
   gem 'pry-rails'
 #  gem 'rpm_contrib'
 #  gem 'newrelic_rpm'
-  gem 'quiet_assets'
+  gem 'quiet_assets', '>= 1.0.2'
 end
 
 group :development do
@@ -98,7 +98,7 @@ group :development do
   # better errors
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'meta_request'
+  gem 'meta_request', '>= 0.2.8'
   gem 'foreman', :require => false
 
   # Use puma for development
@@ -130,7 +130,7 @@ group :assets do
   # We can't upgrade because not compatible to jquery >= 1.9.
   # To do that, we need fix the rails.js
   gem 'jquery-rails', '~> 2.1.4'
-  gem 'pjax_rails'
+  gem 'pjax_rails', '>= 0.3.4'
   gem 'underscore-rails'
   gem 'turbo-sprockets-rails3'
 end
