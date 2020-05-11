@@ -9,7 +9,7 @@ gem 'railties', RAILS_VERSION
 
 gem 'mongoid'
 
-gem 'mongoid_rails_migrations'
+gem 'mongoid_rails_migrations', '>= 1.0.1'
 gem 'devise'
 gem 'haml'
 gem 'htmlentities'
@@ -22,7 +22,7 @@ gem 'actionmailer_inline_css'
 gem 'kaminari', '>= 0.14.1'
 gem 'rack-ssl-enforcer', :require => false
 gem 'fabrication'
-gem 'rails_autolink'
+gem 'rails_autolink', '>= 1.1.4'
 # Please don't update hoptoad_notifier to airbrake.
 # It's for internal use only, and we monkeypatch certain methods
 gem 'hoptoad_notifier', "~> 2.4"
@@ -34,9 +34,9 @@ gem 'hoptoad_notifier', "~> 2.4"
 # Issue Trackers
 # ---------------------------------------
 # Lighthouse
-gem 'lighthouse-api'
+gem 'lighthouse-api', '>= 2.0'
 # Redmine
-gem 'oruen_redmine_client', :require => 'redmine_client'
+gem 'oruen_redmine_client', '>= 0.0.1', :require => 'redmine_client'
 # Pivotal Tracker
 gem 'pivotal-tracker'
 # Fogbugz
