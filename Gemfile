@@ -19,7 +19,7 @@ gem 'useragent'
 gem 'decent_exposure'
 gem 'strong_parameters'
 gem 'actionmailer_inline_css'
-gem 'kaminari', '>= 0.14.1'
+gem 'kaminari', '>= 1.2.1'
 gem 'rack-ssl-enforcer', :require => false
 gem 'fabrication'
 gem 'rails_autolink'
