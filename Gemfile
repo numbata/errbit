@@ -129,8 +129,8 @@ group :assets do
   gem 'uglifier',     '>= 1.0.3'
   # We can't upgrade because not compatible to jquery >= 1.9.
   # To do that, we need fix the rails.js
-  gem 'jquery-rails', '~> 2.1.4'
-  gem 'pjax_rails'
+  gem 'jquery-rails', '~> 3.1.3'
+  gem 'pjax_rails', '>= 0.3.4'
   gem 'underscore-rails'
   gem 'turbo-sprockets-rails3'
 end
