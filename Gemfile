@@ -54,7 +54,7 @@ gem "taskmapper"
 gem "taskmapper-unfuddle"
 
 # Jira
-gem 'jira-ruby', :require => 'jira'
+gem 'jira-ruby', '>= 0.1.2', :require => 'jira'
 
 # Notification services
 # ---------------------------------------
